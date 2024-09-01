@@ -7,7 +7,7 @@ let p1 = new Promise((res,rej)=>{
                 return x
             }
         }))
-    }, 3000)
+    }, 1000)
 })
 p1.then((res)=>{
     // console.log(res)
@@ -18,7 +18,7 @@ p1.then((res)=>{
             res(y.map((x) => {
                 return x*2
             }))
-        }, 1000)
+        }, 3000)
     })
 
     p2.then((res)=>{
